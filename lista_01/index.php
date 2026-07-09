@@ -1,8 +1,9 @@
 <?php
 
-function calcularFormula($x, $y){
+function calcularFormula($x, $y)
+{
 
-    if (($x + $y) = 0){
+    if (($x + $y) == 0) {
         return "Não é possivel realizar a divisão por zero";
     }
 
@@ -13,3 +14,7 @@ function calcularFormula($x, $y){
 }
 
 $x = 10;
+$y = 5;
+echo "valor de X: $x <br>";
+echo "valor de Y: $y <br><br>";
+echo "Resultado: " . calcularFormula($x, $y);
