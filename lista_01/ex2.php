@@ -2,7 +2,18 @@
 
 function inverterTexto($texto)
 {
-    return strrev($texto);
+    $quantidade_caracteres = strlen($texto);
+    $texto_invertido = strrev($texto);
+    
+    return [
+        'invertido' => $texto_invertido,
+        'quantidade_caracteres' => $quantidade_caracteres
+    ];
 }
 
-echo inverterTexto("Hello, World!");
+$texto = "Hello, World!";
+$resultado = inverterTexto($texto);
+
+echo "Texto original: $texto <br>";
+echo "Texto invertido: " . $resultado['invertido'] . "<br>";
+echo "Quantidade de caracteres: " . $resultado['quantidade_caracteres'];

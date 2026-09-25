@@ -2,7 +2,7 @@
 
 function gerarSenha($tamanho = 8)
 {
-    // $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    UVWXYZ';
     $numeros = '0123456789';
     $letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
